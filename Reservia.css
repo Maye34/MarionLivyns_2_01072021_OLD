@@ -1,0 +1,42 @@
+@font-face 
+{ 
+    font-family: 'Raleway_h1';
+    src: url('C:/Users/mario/Documents/P2_livyns_marion/Reservia/Raleway-Bold.ttf') format('truetype')
+}
+@font-face 
+{  
+    font-family: 'Raleway_h2';
+    src: url('C:/Users/mario/Documents/P2_livyns_marion/Reservia/Raleway-Thin.ttf') format('truetype')
+}
+
+h1
+{
+    color: black;
+    font-size: large;
+    font-family: 'Raleway_h1', Arial, Verdana, sans-serif;
+}
+
+h2
+{
+    color: black;
+    font-size: smaller; 
+    font-family: 'Raleway_h2', Arial, Verdana, sans-serif;
+}
+
+
+h3
+{
+    color: black;
+    font-size: smaller; 
+    font-weight: bold;
+    font-family: 'Raleway_h2', Arial, Verdana, sans-serif;
+}
+
+span
+
+{
+    color: black;
+    font-weight: bold;
+    font-size: smaller; 
+    font-family: 'Raleway_h2', Arial, Verdana, sans-serif;
+}
