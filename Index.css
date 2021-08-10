@@ -1,0 +1,122 @@
+@font-face 
+{ 
+    font-family: 'Raleway_h1';
+    src: url('C:/Users/mario/Documents/P2_livyns_marion/Reservia/Raleway-Bold.ttf') format('truetype')
+}
+@font-face 
+{  
+    font-family: 'Raleway_h2';
+    src: url('C:/Users/mario/Documents/P2_livyns_marion/Reservia/Raleway-Thin.ttf') format('truetype')
+}
+
+h1
+{
+    color: black;
+    font-size: large;
+    font-family: 'Raleway_h1', Arial, Verdana, sans-serif;
+}
+
+h2
+{
+    color: black;
+    font-size: smaller; 
+    font-family: 'Raleway_h2', Arial, Verdana, sans-serif;
+}
+
+
+h3
+{
+    color: black;
+    font-size: smaller; 
+    font-weight: bold;
+    font-family: 'Raleway_h2', Arial, Verdana, sans-serif;
+}
+
+span
+
+{
+    color: black;
+    font-weight: bold;
+    font-size: smaller; 
+    font-family: 'Raleway_h1', Arial, Verdana, sans-serif;
+}
+
+.Filtre
+{
+        margin: 0;
+}
+
+.category_filter
+{
+    display:inline-block;
+    margin: 0 15px;
+    vertical-align:top;
+}
+
+.category_filter 
+
+{
+    margin: 2rem auto;
+    overflow: hidden;
+    max-width:300px;
+    border:none;
+    color: white;
+    font-size: 1.125rem;
+    padding: 20px 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    transition:filter .6s;
+    
+}
+    
+.category_filter span
+{
+
+    position: relative;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.34)
+    
+}   
+    
+.category_filter:hover
+{
+    
+    filter: drop-shadow(0 -5px 15px rgba(0, 0, 0, 0.32))
+    
+}
+    
+    
+.category_filter:before
+{
+    z-index: -1;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    background-image:linear-gradient(135deg, #ff0000 0%, #ffff00 15%, #00ff00 30%, #00ffff 50%, #0000ff 65%, #ff00ff 80%, #ff0000 100%);
+    transform: scale3d(8,8,8);
+}
+    
+.category_filter:hover:before
+{
+    transition: .6s;
+    transform: scale3d(7,7,7);
+    filter: hue-rotate(120deg) brightness(.7)   
+}
+    
+.category_filter:after
+{ 
+    position: absolute;
+    border-radius: 60px;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 50%;
+    width: 100%;
+    background:white;
+    filter:opacity(.2)
+}
